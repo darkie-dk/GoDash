@@ -12,8 +12,20 @@ export default {
       gridTemplateColumns: {
         app: 'minmax(18rem, 20rem) 1fr',
         profile: 'max-content 1fr min-content',
+        form: 'minmax(7.5rem, 17.5rem) minmax(25rem, 1fr) minmax(0, 15rem)',
+      },
+      borderWidth: {
+        6: '6px',
       },
       colors: {
+        sky: {
+          25: '#f8fcff',
+          75: '#f0f9ff',
+          150: '#e0f2fe',
+        },
+        slate: {
+          25: '#fbfcfd',
+        },
         primary: {
           DEFAULT: 'hsl(var(--primary))',
           light: '#3B82F6',

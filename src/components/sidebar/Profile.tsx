@@ -2,7 +2,8 @@ import { LuLogOut } from 'react-icons/lu'
 
 export function Profile() {
   return (
-    <div className="grid-cols-profile grid items-center gap-3">
+    <div className="grid grid-cols-profile items-center gap-3">
+      {/* eslint-disable-next-line @next/next/no-img-element */}
       <img
         src="https://github.com/darkie-dk.png"
         alt=""

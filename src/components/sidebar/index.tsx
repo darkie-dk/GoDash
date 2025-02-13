@@ -8,7 +8,7 @@ import { HiOutlineCog6Tooth } from 'react-icons/hi2'
 import { LuChartColumnIncreasing, LuFlag, LuUsers } from 'react-icons/lu'
 import { UsedSpaceWidget } from './UsedSpaceWidget'
 import { Profile } from './Profile'
-import { InputControl, InputPrefix, InputRoot } from '../Input'
+import { InputControl, InputPrefix, InputRoot } from '../Form/Input'
 
 export function Sidebar() {
   return (

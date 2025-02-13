@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+// eslint-disable-next-line camelcase
 import { Roboto, Roboto_Mono } from 'next/font/google'
 import './globals.css'
 import { Sidebar } from '@/components/sidebar'
@@ -33,7 +34,7 @@ export default function RootLayout({
         <div className="grid min-h-screen grid-cols-app">
           <Sidebar />
 
-          <main className="px-4 pb-12 pt-8">{children}</main>
+          <main className="px-8 pb-12 pt-8">{children}</main>
         </div>
       </body>
     </html>
