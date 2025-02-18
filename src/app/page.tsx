@@ -12,6 +12,7 @@ import { OrdersTabs } from '@/components/OrdersTabs'
 import { LuMail } from 'react-icons/lu'
 import * as FileInput from '@/components/Form/FileInput'
 import { TextArea } from '@/components/Form/TextArea'
+import { Button } from '@/components/Button'
 
 // import {
 //   Breadcrumb,
@@ -40,19 +41,12 @@ export default function Home() {
             </span>
           </div>
           <div className="flex items-center gap-2">
-            <button
-              type="button"
-              className="rounded-lg border border-slate-200 px-4 py-2 text-sm font-semibold text-slate-800 shadow-md transition hover:bg-slate-50"
-            >
+            <Button type="button" variant="outline">
               Cancel
-            </button>
-            <button
-              type="submit"
-              form="settings"
-              className="rounded-lg bg-sky-600 px-4 py-2 text-sm font-semibold text-white shadow-sm transition hover:bg-sky-700"
-            >
+            </Button>
+            <Button type="submit" form="settings" variant="primary">
               Save
-            </button>
+            </Button>
           </div>
         </div>
 
@@ -179,18 +173,12 @@ export default function Home() {
           </div>
 
           <div className="flex items-center justify-end gap-2 pt-5">
-            <button
-              type="button"
-              className="rounded-lg border border-slate-200 px-4 py-2 text-sm font-semibold text-slate-800 shadow-md transition hover:bg-slate-50"
-            >
+            <Button type="button" variant="outline">
               Cancel
-            </button>
-            <button
-              type="submit"
-              className="rounded-lg bg-sky-600 px-4 py-2 text-sm font-semibold text-white shadow-sm transition hover:bg-sky-700"
-            >
+            </Button>
+            <Button type="submit" form="settings" variant="primary">
               Save
-            </button>
+            </Button>
           </div>
         </form>
       </div>

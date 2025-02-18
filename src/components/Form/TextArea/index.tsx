@@ -19,13 +19,25 @@ export function ToggleTextVariant() {
       className="items-end"
       variant="outline"
     >
-      <ToggleGroupItem value="bold" aria-label="Toggle bold">
+      <ToggleGroupItem
+        value="bold"
+        aria-label="Toggle bold"
+        className="outline-none focus:border-slate-600 focus:ring-1 focus:ring-sky-100"
+      >
         <Bold className="h-4 w-4" />
       </ToggleGroupItem>
-      <ToggleGroupItem value="italic" aria-label="Toggle italic">
+      <ToggleGroupItem
+        value="italic"
+        aria-label="Toggle italic"
+        className="outline-none focus:border-slate-600 focus:ring-1 focus:ring-sky-100"
+      >
         <Italic className="h-4 w-4" />
       </ToggleGroupItem>
-      <ToggleGroupItem value="strikethrough" aria-label="Toggle strikethrough">
+      <ToggleGroupItem
+        value="strikethrough"
+        aria-label="Toggle strikethrough"
+        className="outline-none focus:border-slate-600 focus:ring-1 focus:ring-sky-100"
+      >
         <Underline className="h-4 w-4" />
       </ToggleGroupItem>
     </ToggleGroup>

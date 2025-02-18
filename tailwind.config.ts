@@ -9,22 +9,60 @@ export default {
   ],
   theme: {
     extend: {
+      width: {
+        '70': '17.5rem',
+      },
       gridTemplateColumns: {
         app: 'minmax(18rem, 20rem) 1fr',
         profile: 'max-content 1fr min-content',
         form: 'minmax(7.5rem, 17.5rem) minmax(25rem, 1fr) minmax(0, 15rem)',
       },
+      animation: {
+        slideDownAndFade: 'slideDownAndFade 1s linear',
+        slideUpAndFade: 'slideUpAndFade 1s linear',
+      },
+      keyframes: {
+        slideDownAndFade: {
+          from: {
+            opacity: '0',
+          },
+          to: {
+            opacity: '1',
+          },
+        },
+        slideUpAndFade: {
+          from: {
+            opacity: '1',
+          },
+          to: {
+            opacity: '0',
+          },
+        },
+      },
       borderWidth: {
-        6: '6px',
+        '6': '6px',
       },
       colors: {
+        error: {
+          '25': '#FFFBFA',
+          '50': '#FEF3F2',
+          '100': '#FEE4E2',
+          '200': '#FECDCA',
+          '300': '#FDA29B',
+          '400': '#F97066',
+          '500': '#F04438',
+          '600': '#D92D20',
+          '700': '#B42318',
+          '800': '#912018',
+          '900': '#7A271A',
+        },
         sky: {
-          25: '#f8fcff',
-          75: '#f0f9ff',
-          150: '#e0f2fe',
+          '25': '#f8fcff',
+          '75': '#f0f9ff',
+          '150': '#e0f2fe',
         },
         slate: {
-          25: '#fbfcfd',
+          '25': '#fbfcfd',
         },
         primary: {
           DEFAULT: 'hsl(var(--primary))',
@@ -74,6 +112,16 @@ export default {
           '3': 'hsl(var(--chart-3))',
           '4': 'hsl(var(--chart-4))',
           '5': 'hsl(var(--chart-5))',
+        },
+        sidebar: {
+          DEFAULT: 'hsl(var(--sidebar-background))',
+          foreground: 'hsl(var(--sidebar-foreground))',
+          primary: 'hsl(var(--sidebar-primary))',
+          'primary-foreground': 'hsl(var(--sidebar-primary-foreground))',
+          accent: 'hsl(var(--sidebar-accent))',
+          'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
+          border: 'hsl(var(--sidebar-border))',
+          ring: 'hsl(var(--sidebar-ring))',
         },
       },
       borderRadius: {
