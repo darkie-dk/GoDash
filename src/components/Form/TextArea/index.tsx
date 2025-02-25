@@ -22,21 +22,21 @@ export function ToggleTextVariant() {
       <ToggleGroupItem
         value="bold"
         aria-label="Toggle bold"
-        className="outline-none focus:border-slate-600 focus:ring-1 focus:ring-sky-100"
+        className="outline-none focus:border-slate-600 focus:ring-1 focus:ring-sky-100 dark:focus:ring-slate-600"
       >
         <Bold className="h-4 w-4" />
       </ToggleGroupItem>
       <ToggleGroupItem
         value="italic"
         aria-label="Toggle italic"
-        className="outline-none focus:border-slate-600 focus:ring-1 focus:ring-sky-100"
+        className="outline-none focus:border-slate-600 focus:ring-1 focus:ring-sky-100 dark:focus:ring-slate-600"
       >
         <Italic className="h-4 w-4" />
       </ToggleGroupItem>
       <ToggleGroupItem
         value="strikethrough"
         aria-label="Toggle strikethrough"
-        className="outline-none focus:border-slate-600 focus:ring-1 focus:ring-sky-100"
+        className="outline-none focus:border-slate-600 focus:ring-1 focus:ring-sky-100 dark:focus:ring-slate-600"
       >
         <Underline className="h-4 w-4" />
       </ToggleGroupItem>

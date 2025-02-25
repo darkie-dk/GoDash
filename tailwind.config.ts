@@ -63,6 +63,7 @@ export default {
         },
         slate: {
           '25': '#fbfcfd',
+          '950': '#111820',
         },
         primary: {
           DEFAULT: 'hsl(var(--primary))',

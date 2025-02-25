@@ -17,8 +17,8 @@ export function ImagePreview() {
   if (previewURL === null) {
     return (
       <div className="flex items-start gap-5">
-        <div className="flex h-16 w-16 items-center justify-center rounded-full bg-slate-50">
-          <LuUser className="h-8 w-8 text-slate-700" />
+        <div className="flex h-16 w-16 items-center justify-center rounded-full bg-slate-50 dark:bg-sky-800/10">
+          <LuUser className="h-8 w-8 text-slate-700 dark:text-sky-700" />
         </div>
       </div>
     )

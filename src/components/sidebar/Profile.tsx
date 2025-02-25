@@ -11,10 +11,10 @@ export function Profile() {
         className="h-10 w-10 rounded-full"
       />
       <div className="flex flex-1 flex-col truncate">
-        <span className="text-sm font-semibold text-slate-700">
+        <span className="text-sm font-semibold text-slate-700 dark:text-slate-200">
           Keven Daniel
         </span>
-        <span className="truncate text-sm text-slate-500">
+        <span className="truncate text-sm text-slate-500 dark:text-slate-400">
           kevendaniel.kd@gmail.com
         </span>
       </div>
