@@ -3,6 +3,7 @@ import type { Metadata } from 'next'
 import { Roboto, Roboto_Mono } from 'next/font/google'
 import './globals.css'
 import { Toaster } from '@/components/ui/sonner'
+import { ThemeProvider } from '@/components/Theme/theme-provider'
 
 const RobotoSans = Roboto({
   variable: '--font-roboto',
@@ -17,7 +18,7 @@ const RobotoMono = Roboto_Mono({
 })
 
 export const metadata: Metadata = {
-  title: 'GoDash Login',
+  title: 'Godash',
   description: '',
 }
 
@@ -27,12 +28,20 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en" className="">
+    <html lang="en">
       <body
         className={`${RobotoSans.variable} ${RobotoMono.variable} antialiased`}
       >
-        <Toaster richColors />
-        {children}
+        <ThemeProvider
+          storageKey="godash-theme"
+          attribute="class"
+          defaultTheme="light"
+          enableSystem
+          disableTransitionOnChange
+        >
+          <Toaster richColors />
+          {children}
+        </ThemeProvider>
       </body>
     </html>
   )

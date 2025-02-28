@@ -4,7 +4,7 @@ import '../globals.css'
 import { LuPizza } from 'react-icons/lu'
 
 export const metadata: Metadata = {
-  title: 'GoDash app',
+  title: 'GoDash',
   description: '',
 }
 
