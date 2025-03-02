@@ -5,8 +5,8 @@ import {
   TableHeader,
   TableRow,
 } from '@/components/ui/table'
-import { OrderTableRow } from './(components)/order-table-row'
-import { OrderTablefilters } from './(components)/order-table-filters'
+import { OrderTableRow } from './(components)/Order/table-row'
+import { OrderTablefilters } from './(components)/Order/table-filters'
 import { Pagination } from '@/components/Pagination'
 
 export default function Orders() {
